@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.preference.PreferenceCategory
+        android:title="@string/user_pref_category"
+        android:key="@string/pref_cat_user">
+        <EditTextPreference
+            android:key="@string/pref_user_location_key"
+            android:title="@string/pref_user_location"
+            android:dialogTitle="@string/pref_user_location" />
+        <EditTextPreference
+            android:key="@string/pref_user_lang_key"
+            android:title="@string/pref_user_lang"
+            android:dialogTitle="@string/pref_user_lang" />
+    </android.support.v7.preference.PreferenceCategory>
+</PreferenceScreen>

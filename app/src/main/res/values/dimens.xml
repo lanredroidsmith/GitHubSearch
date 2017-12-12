@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="master_detail_shadow_width">4dp</dimen>
+
+    <!-- List -->
+    <dimen name="listview_item_height">72dp</dimen>
+    <dimen name="list_circle_avatar_width">40dp</dimen>
+    <dimen name="list_circle_avatar_height">40dp</dimen>
+    <dimen name="list_text_margin_start">16dp</dimen>
+    <dimen name="list_text_margin_end">8dp</dimen>
+    <dimen name="list_container_padding_start">16dp</dimen>
+    <dimen name="list_detail_horizontal_margin">16dp</dimen>
+    <dimen name="list_container_padding_end">16dp</dimen>
+    <dimen name="list_circle_avatar_margin_start">0dp</dimen>
+</resources>

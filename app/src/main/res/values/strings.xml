@@ -1,0 +1,61 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">GitHub Search</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_language">Language</string>
+    <string name="hint_location">Location</string>
+    <string name="more_options">More Options</string>
+    <string name="hint_no_of_repos">No. of repos (at least)</string>
+    <string name="hint_no_of_followers">No. of followers (at least)</string>
+    <string name="date_joined">Date Joined</string>
+    <string name="individual">Individual</string>
+    <string name="organization">Organization</string>
+    <string name="search">Search</string>
+    <string name="repo_search_menu">Search Repo</string>
+    <string name="favorite_users_menu">Favorite Users</string>
+    <string name="favorite_repo_menu">Favorite Repos</string>
+    <string name="settings_menu">Settings</string>
+    <string name="user_results_activity_label">Users</string>
+
+    <string name="favorite_marker">Favorite Marker</string>
+    <string name="user_avatar_desc">User Avatar</string>
+    <string name="share">Share</string>
+    <string name="user_details_activity_label">User Details</string>
+
+    <string name="write_storage_reason">
+        <xliff:g example="AppName" id="app_name">%s</xliff:g> needs to save user\'s image to storage.
+    </string>
+    <string name="ok_btn_label">OK</string>
+    <string name="permission_denied">Permission denied. User\'s avatar will not be saved.</string>
+    <string name="storage_mounted">Please disconnect device from PC first</string>
+    <string name="storage_not_found">Storage not found</string>
+    <string name="avatar_not_found">Avatar not found/loaded</string>
+    <string name="could_not_save_avatar">Could not save avatar. Please try again.</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="could_not_del_avatar_storage_shared">Could not delete avatar. Storage is currently shared.</string>
+    <string name="could_not_del_avatar_storage_not_found">Could not delete avatar. Storage not found.</string>
+    <string name="unable_to_del_avatar">Unable to delete avatar from storage</string>
+    <string name="empty_results">Empty results.</string>
+    <string name="pls_include_param">Please include at least a parameter</string>
+    <string name="no_internet">Cannot connect to the Internet.</string>
+    <string name="dialog_processing">Processing&#8230;</string>
+    <string name="share_user_msg_body">Check out this awesome developer @<xliff:g example="login_name" id="login">%s</xliff:g> on <xliff:g example="https://github.com/login_name" id="url">%s</xliff:g> .</string>
+    <string name="share_user_msg_subject">Check this out!</string>
+    <string name="share_dialog_title">Share via</string>
+    <string name="no_share_app_found">Cannot share user - no sharer app found.</string>
+    <string name="favorite_users_activity_label">Favorite Users</string>
+    <string name="undo">Undo</string>
+    <string name="list_item_deleted">1 item deleted</string>
+    <string name="user_already_favorite">User already added to favorites.</string>
+
+    <!-- Prefs stuff -->
+    <string name="pref_user_location_key" translatable="false">user_location</string>
+    <string name="pref_user_lang_key" translatable="false">user_lang</string>
+    <string name="settings_activity_label">Settings</string>
+    <string name="pref_user_location">Location</string>
+    <string name="pref_user_location_default_summary">Preferred User\'s Location</string>
+    <string name="user_pref_category">User</string>
+    <string name="pref_user_lang">Language</string>
+    <string name="pref_user_lang_default_summary">Preferred User\'s Language</string>
+    <string name="no_favorite_users">No favorite users found.</string>
+    <string name="pref_cat_user" translatable="false">pref_cat_user</string>
+</resources>

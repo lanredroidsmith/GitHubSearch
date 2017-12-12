@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="uvm"
+            type="com.lanredroidsmith.githubsearch.ui.user.viewmodel.UserListItemViewModel" />
+    </data>
+
+     <LinearLayout
+         android:id="@+id/user_card"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/listview_item_height"
+         android:orientation="horizontal"
+         android:paddingStart="@dimen/list_container_padding_start"
+         android:paddingEnd="@dimen/list_container_padding_end"
+         android:onClick="@{uvm::onUserSelected}"
+         android:gravity="center_vertical"
+         style="@style/activated">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="@dimen/list_circle_avatar_width"
+                android:layout_height="@dimen/list_circle_avatar_height"
+                android:layout_marginStart="@dimen/list_circle_avatar_margin_start"
+                android:contentDescription="@string/user_avatar_desc"
+                tools:src="@drawable/github_mark"
+                app:imageUrl="@{uvm.avatarUrl}" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/list_text_margin_start"
+                android:layout_marginEnd="@dimen/list_text_margin_end"
+                android:layout_weight="1"
+                tools:text="Username"
+                android:text="@{uvm.login}"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/favorite_marker"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@string/favorite_marker"
+                android:src="@{uvm.favorite}"
+                android:onClick="@{uvm::onFavoriteClicked}"
+                tools:src="@drawable/star_48" />
+     </LinearLayout>
+</layout>

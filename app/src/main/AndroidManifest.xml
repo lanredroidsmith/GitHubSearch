@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lanredroidsmith.githubsearch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".GitHubSearchApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.user.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.user.UsersListActivity"
+            android:label="@string/user_results_activity_label" />
+        <activity
+            android:name=".ui.user.UserDetailsActivity"
+            android:label="@string/user_details_activity_label" />
+        <activity
+            android:name=".ui.user.FavoriteUsersListActivity"
+            android:label="@string/favorite_users_activity_label" />
+        <activity
+            android:name=".ui.user.FavoriteUserDetailsActivity"
+            android:label="@string/user_details_activity_label" />
+
+        <provider
+            android:name=".data.local.DbContentProvider"
+            android:authorities="com.lanredroidsmith.githubsearch"
+            android:exported="false" />
+
+        <activity android:name=".ui.common.SettingsActivity"
+            android:label="@string/settings_activity_label" />
+    </application>
+
+</manifest>
